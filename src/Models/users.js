@@ -12,7 +12,7 @@ const user = new mongoose.Schema({
         required:true
     },
 
-    p_No:{
+    pno:{
         type:Number,
         required:true
     },

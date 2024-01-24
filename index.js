@@ -24,7 +24,7 @@ server.get("/", (req, res) => {
         age: 40
     })
 })
-server.post("/register", register, sendEmail)
+server.post("/register", register)
 server.post("/login", login)
 
 io.on("connection", socket => {

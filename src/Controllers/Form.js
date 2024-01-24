@@ -3,7 +3,7 @@ const forms = require("../Models/Form")
 exports.addForm = async (req, res,next) => {
 
     try {
-        const { name, email, pNo, message, interest } = req.body
+        const { name, email, pno, message, interest } = req.body
         const form = new forms(req.body)
         await form.save()
         req.subject = "User Registration",
